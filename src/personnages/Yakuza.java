@@ -12,8 +12,9 @@ public class Yakuza extends Humain {
 	@Override
 	
 	public void direBonjour() {
-		parler("Bonjour ! Je m'apelle " + nom + " et j'aime boire du " + boissonFavorite);
-		parler("Mon clan est celui de "+ clan);
+		Humain humain = new Humain(getNom(),getBoissonFavorite(),getArgent() );
+		humain.direBonjour();
+		parler("Mon clan est celui de "+ clan + ".");
 	}
 	
 	public int getRéputation() {

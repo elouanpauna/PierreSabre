@@ -31,7 +31,7 @@ public class Humain {
 		parler("Bonjour ! Je m'apelle " + nom + " et j'aime boire du " + boissonFavorite);
 	}
 
-	public void Boire() {
+	public void boire() {
 		parler("Mmmm, un bon verre de " + boissonFavorite + "! GLOUPS !");
 	}
 
@@ -83,7 +83,7 @@ public class Humain {
 		for (int i=1;i<nbConnaissances;i++) {
 			texte+= ", " + memoire[i].getNom();
 		}
-		System.out.println(texte);
+		parler(texte);
 	}
 	
 }
