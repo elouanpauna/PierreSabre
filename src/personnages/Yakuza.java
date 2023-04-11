@@ -9,6 +9,12 @@ public class Yakuza extends Humain {
 		this.clan=nomClan;
 		
 	}
+	@Override
+	
+	public void direBonjour() {
+		parler("Bonjour ! Je m'apelle " + nom + " et j'aime boire du " + boissonFavorite);
+		parler("Mon clan est celui de "+ clan);
+	}
 	
 	public int getRéputation() {
 		return réputation;

@@ -77,7 +77,7 @@ public class Humain {
 		direBonjour();
 		memoriser(humain);
 	}
-
+	
 	public void listerConnaissances() {
 		String texte = "Je connais beaucoup de monde dont : " + memoire[0].getNom();
 		for (int i=1;i<nbConnaissances;i++) {
