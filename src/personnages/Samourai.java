@@ -9,10 +9,14 @@ public class Samourai extends Ronin {
 		
 	}
 	
+	public String getSeigneur() {
+		return seigneur;
+	}
+
 @Override
 	
 	public void direBonjour() {
-		Humain humain = new Humain(getNom(),getBoissonFavorite(),getArgent() );
+		Humain humain = new Humain(nom,boissonFavorite,argent );
 		humain.direBonjour();
 		parler("Je suis fier de servir le seigneur "+ seigneur + ".");
 	}
